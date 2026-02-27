@@ -10,7 +10,7 @@
   "experimentalSortImports": {
     "enabled": true,
     "groups": [
-      ["side-effect"],
+      ["side_effect"],
       ["value-builtin", "type-builtin"],
       ["value-external", "type-external"],
       ["value-internal", "type-internal"]
