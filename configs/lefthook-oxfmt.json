@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/lefthook.json",
+  "pre-commit": {
+    "parallel": true,
+    "commands": {
+      "format:oxfmt": {
+        "glob": "*.{ts,tsx,js,jsx,json,jsonc,css}",
+        "run": "bunx oxfmt --write {staged_files}",
+        "stage_fixed": true
+      }
+    }
+  }
+}

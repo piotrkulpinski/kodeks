@@ -1,0 +1,50 @@
+{
+  "name": "kodeks",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Shared linter configurations for TypeScript projects.",
+  "homepage": "https://github.com/piotrkulpinski/kodeks",
+  "bugs": {
+    "url": "https://github.com/piotrkulpinski/kodeks/issues"
+  },
+  "license": "MIT",
+  "author": "Piotr Kulpinski",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piotrkulpinski/kodeks"
+  },
+  "files": [
+    "configs",
+    "skills"
+  ],
+  "type": "module",
+  "exports": {
+    "./oxlint": "./configs/oxlint-base.json",
+    "./oxlint-next": "./configs/oxlint-next.json",
+    "./oxlint-tanstack": "./configs/oxlint-tanstack.json",
+    "./commitlint": "./configs/commitlint.json"
+  },
+  "scripts": {
+    "prepare": "lefthook install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "lefthook": "^2.1.1",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": ">=20.4.2",
+    "@commitlint/config-conventional": ">=20.4.2",
+    "lefthook": ">=2.1.1",
+    "oxfmt": ">=0.35.0",
+    "oxlint": ">=1.50.0",
+    "typescript": ">=5.9.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "packageManager": "bun@1.3.9"
+}

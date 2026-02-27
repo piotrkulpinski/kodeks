@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "configs/lefthook-oxlint.json",
+    "configs/lefthook-oxfmt.json",
+    "configs/lefthook-commitlint.json"
+  ]
+}
