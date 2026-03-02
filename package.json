@@ -1,16 +1,15 @@
 {
-  "name": "kodeks",
-  "private": false,
+  "name": "@dirstack/kodeks",
   "description": "Shared linter configurations for TypeScript projects.",
-  "homepage": "https://github.com/piotrkulpinski/kodeks",
+  "homepage": "https://github.com/dirstack/kodeks#readme",
   "bugs": {
-    "url": "https://github.com/piotrkulpinski/kodeks/issues"
+    "url": "https://github.com/dirstack/kodeks/issues"
   },
   "license": "MIT",
   "author": "Piotr Kulpinski",
   "repository": {
     "type": "git",
-    "url": "https://github.com/piotrkulpinski/kodeks"
+    "url": "https://github.com/dirstack/kodeks"
   },
   "files": [
     "configs",
@@ -24,6 +23,9 @@
     "./commitlint": "./configs/commitlint.json",
     "./semantic-release": "./configs/semantic-release.json",
     "./semantic-release-dry-run": "./configs/semantic-release-dry-run.json"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "prepare": "lefthook install"

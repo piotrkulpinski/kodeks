@@ -1,7 +1,7 @@
 # Kodeks
 
-[![npm version](https://img.shields.io/npm/v/kodeks.svg)](https://www.npmjs.com/package/kodeks)
-[![license](https://img.shields.io/npm/l/kodeks.svg)](https://github.com/piotrkulpinski/kodeks/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/%40dirstack%2Fkodeks.svg)](https://www.npmjs.com/package/@dirstack/kodeks)
+[![license](https://img.shields.io/npm/l/%40dirstack%2Fkodeks.svg)](https://github.com/dirstack/kodeks/blob/main/LICENSE)
 
 Shared linter configurations for TypeScript projects.
 
@@ -10,7 +10,7 @@ Kodeks provides reusable, opinionated configurations for maintaining consistent 
 ## Installation
 
 ```bash
-bun add -d kodeks
+bun add -d @dirstack/kodeks
 ```
 
 This will automatically install all required dependencies.
@@ -26,7 +26,7 @@ Create a `.oxlintrc.json` file in your project root:
 
 ```json
 {
-  "extends": ["./node_modules/kodeks/configs/oxlint-base.json"]
+  "extends": ["./node_modules/@dirstack/kodeks/configs/oxlint-base.json"]
 }
 ```
 
@@ -34,7 +34,7 @@ For Next.js projects, use the Next.js preset:
 
 ```json
 {
-  "extends": ["./node_modules/kodeks/configs/oxlint-next.json"]
+  "extends": ["./node_modules/@dirstack/kodeks/configs/oxlint-next.json"]
 }
 ```
 
@@ -42,7 +42,7 @@ For TanStack projects, use the TanStack preset:
 
 ```json
 {
-  "extends": ["./node_modules/kodeks/configs/oxlint-tanstack.json"]
+  "extends": ["./node_modules/@dirstack/kodeks/configs/oxlint-tanstack.json"]
 }
 ```
 
@@ -57,7 +57,7 @@ Add to your `package.json` scripts:
 ```json
 {
   "scripts": {
-    "format": "oxfmt --config ./node_modules/kodeks/configs/oxfmt.json --write ."
+    "format": "oxfmt --config ./node_modules/@dirstack/kodeks/configs/oxfmt.json --write ."
   }
 }
 ```
@@ -67,7 +67,7 @@ Add to your `package.json` scripts:
 Copy the configuration file to your project root and reference it directly:
 
 ```bash
-cp ./node_modules/kodeks/configs/oxfmt.json .
+cp ./node_modules/@dirstack/kodeks/configs/oxfmt.json .
 ```
 
 Then use:
@@ -82,7 +82,7 @@ Create a `commitlint.json` file in your project root:
 
 ```json
 {
-  "extends": ["./node_modules/kodeks/configs/commitlint.json"]
+  "extends": ["./node_modules/@dirstack/kodeks/configs/commitlint.json"]
 }
 ```
 
@@ -93,9 +93,9 @@ Create a `lefthook.json` file in your project root and extend the hooks you need
 ```json
 {
   "extends": [
-    "node_modules/kodeks/configs/lefthook-oxlint.json",
-    "node_modules/kodeks/configs/lefthook-oxfmt.json",
-    "node_modules/kodeks/configs/lefthook-commitlint.json"
+    "node_modules/@dirstack/kodeks/configs/lefthook-oxlint.json",
+    "node_modules/@dirstack/kodeks/configs/lefthook-oxfmt.json",
+    "node_modules/@dirstack/kodeks/configs/lefthook-commitlint.json"
   ]
 }
 ```
@@ -119,13 +119,13 @@ This package includes agent skills for code formatting, testing, and commit conv
 Install all skills using [skills.sh](https://skills.sh):
 
 ```bash
-npx skills add piotrkulpinski/kodeks
+npx skills add dirstack/kodeks
 ```
 
 Or install individual skills:
 
 ```bash
-npx skills add piotrkulpinski/kodeks --skill formatting
-npx skills add piotrkulpinski/kodeks --skill testing
-npx skills add piotrkulpinski/kodeks --skill commits
+npx skills add dirstack/kodeks --skill formatting
+npx skills add dirstack/kodeks --skill testing
+npx skills add dirstack/kodeks --skill commits
 ```
