@@ -116,8 +116,16 @@ This package includes agent skills for code formatting, testing, and commit conv
 - `testing` - Best practices, structure, coverage categories, and formatting conventions for writing tests
 - `commits` - Conventional commit types, scopes, and message formatting guidelines
 
-Install them using [skills.sh](https://skills.sh):
+Install all skills using [skills.sh](https://skills.sh):
 
 ```bash
 npx skills add piotrkulpinski/kodeks
+```
+
+Or install individual skills:
+
+```bash
+npx skills add piotrkulpinski/kodeks --skill formatting
+npx skills add piotrkulpinski/kodeks --skill testing
+npx skills add piotrkulpinski/kodeks --skill commits
 ```
