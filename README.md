@@ -116,10 +116,8 @@ This package includes agent skills for code formatting, testing, and commit conv
 - `testing` - Best practices, structure, coverage categories, and formatting conventions for writing tests
 - `commits` - Conventional commit types, scopes, and message formatting guidelines
 
-To make them available globally in [Claude Code](https://docs.anthropic.com/en/docs/claude-code), symlink the skills directory:
+Install them using [skills.sh](https://skills.sh):
 
 ```bash
-ln -s ./node_modules/kodeks/skills/formatting ~/.claude/skills/formatting
-ln -s ./node_modules/kodeks/skills/testing ~/.claude/skills/testing
-ln -s ./node_modules/kodeks/skills/commits ~/.claude/skills/commits
+npx skills add piotrkulpinski/kodeks
 ```
