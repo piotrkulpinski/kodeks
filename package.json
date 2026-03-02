@@ -1,6 +1,5 @@
 {
   "name": "kodeks",
-  "version": "0.1.0",
   "private": false,
   "description": "Shared linter configurations for TypeScript projects.",
   "homepage": "https://github.com/piotrkulpinski/kodeks",
@@ -22,7 +21,9 @@
     "./oxlint": "./configs/oxlint-base.json",
     "./oxlint-next": "./configs/oxlint-next.json",
     "./oxlint-tanstack": "./configs/oxlint-tanstack.json",
-    "./commitlint": "./configs/commitlint.json"
+    "./commitlint": "./configs/commitlint.json",
+    "./semantic-release": "./configs/semantic-release.json",
+    "./semantic-release-dry-run": "./configs/semantic-release-dry-run.json"
   },
   "scripts": {
     "prepare": "lefthook install"
@@ -30,17 +31,21 @@
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
     "lefthook": "^2.1.1",
     "oxfmt": "^0.35.0",
     "oxlint": "^1.50.0",
+    "semantic-release": "^25.0.3",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "@commitlint/cli": ">=20.4.2",
     "@commitlint/config-conventional": ">=20.4.2",
+    "conventional-changelog-conventionalcommits": ">=9.1.0",
     "lefthook": ">=2.1.1",
     "oxfmt": ">=0.35.0",
     "oxlint": ">=1.50.0",
+    "semantic-release": ">=25.0.3",
     "typescript": ">=5.9.3"
   },
   "engines": {
